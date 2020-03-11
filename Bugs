@@ -16,4 +16,8 @@ Bug #3 (Test Scenario #11)
   3. GET to /stats and note the values returns 
   Actual Result: milliseconds returned is incorrect as it's stating more time than it is actually taking (and some requests were rejected - could not readily reproduce this)
   Expected Result: milliseconds should be returned representing the correct time 
-  
+Bug #4 (Test Scenario #16)
+  1. Launch Application 
+  2. Shutdown the application
+  Actual Result: Shutdown signal is received, shutting down, but no 200 is returned 
+  Expected Result: 200 message is returned 
