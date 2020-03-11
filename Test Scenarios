@@ -1,0 +1,16 @@
+Verify that the application waits for connections when first launched
+Verify that the application is served on the correct port 
+Verify that the application is not served on a port other than the one specified
+Verify that a POST to /hash accepts a password
+Verify that a POST to /hash returns a job identifier immediately
+Verify that a POST to /hash waits 5 seconds and then computes the hash
+Verify that a GET to /hash accepts a job idetifier 
+Verify that a GET to /hash does not accept a non-job-identifier
+Verify that a GET to /hash returns a base64 encoded password 
+Verify that a GET to /stats accepts no data 
+Verify that a GET to /stats returns a JSON data structure for the total hash requests since the server started and the average time of a hash request in milliseconds
+Verify that the application can accept multiple connections at one time
+Verify that in-flight hashing completes successfully during shutdown
+Verify that password requests are not accepted during shutdown
+Verify that new requests are rejected during shutdown
+Verify that shutdown completes successfully with a status of 200
